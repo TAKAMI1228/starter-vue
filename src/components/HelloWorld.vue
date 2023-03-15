@@ -52,7 +52,9 @@
       </section>
     </v-col>
     <v-col cols="3">
-      <DogApi></DogApi>
+
+      <img src="" alt="犬の画像">
+
       <ArticleList />
     </v-col>
   </v-row>
