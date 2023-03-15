@@ -52,7 +52,9 @@
       </section>
     </v-col>
     <v-col cols="3">
+
       <img src="" alt="犬の画像">
+
       <ArticleList />
     </v-col>
   </v-row>
@@ -64,7 +66,7 @@
 
 
 <script setup>
-import ArticleList from './component/ArticleList.vue'
+import ArticleList from './partials/ArticleList.vue'
 
 import { ref } from 'vue'
 import { useTheme } from 'vuetify'
@@ -89,6 +91,7 @@ const test = () => {
 import PropsTest from "@/components/PropsTest.vue";
 import ApiTest from "@/components/ApiTest.vue";
 import SoundPlayer from "@/components/SoundPlayer.vue";
+import DogApi from "@/components/DogApi.vue";
 </script>
 
 
