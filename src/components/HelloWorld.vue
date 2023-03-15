@@ -91,7 +91,6 @@ const test = () => {
 import PropsTest from "@/components/PropsTest.vue";
 import ApiTest from "@/components/ApiTest.vue";
 import SoundPlayer from "@/components/SoundPlayer.vue";
-import DogApi from "@/components/DogApi.vue";
 </script>
 
 
