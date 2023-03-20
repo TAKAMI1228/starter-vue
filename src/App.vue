@@ -15,7 +15,7 @@
               :key="index"
               :value="index"
             >
-              <router-link to="/home">
+              <router-link :to="list.link">
                 <v-list-item-title>{{ list.title }}</v-list-item-title>
               </router-link>
             </v-list-item>
@@ -61,10 +61,10 @@ import { useTheme } from 'vuetify'
 const darkTheme = ref(false)
 const theme = useTheme()
 const menuList = ref([
-  { title: 'niwatori' },
-  { title: 'hiyoko' },
-  { title: 'hato' },
-  { title: 'uguisu' },
+  { title: 'Top', link: '/' },
+  { title: 'Shinchoku', link: '/shinchoku' },
+  { title: 'Home', link: '/home' },
+  { title: 'Top', link: '/' },
 ])
 
 const changeTheme = () => {
