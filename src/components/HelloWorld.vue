@@ -32,7 +32,8 @@
   <SoundPlayer number=1></SoundPlayer>
   <ApiTest></ApiTest>
   <PropsTest title="こんにちは" description="Propsてすとだよ。"></PropsTest>
-  <DogApi></DogApi>
+<!--  <DogApi></DogApi>-->
+  <JikanApi></JikanApi>
 </template>
 
 
@@ -46,7 +47,8 @@ const test = () => {
 import PropsTest from "@/components/PropsTest.vue";
 import ApiTest from "@/components/ApiTest.vue";
 import SoundPlayer from "@/components/SoundPlayer.vue";
-import DogApi from "@/components/DogApi.vue";
+import JikanApi from "@/components/JikanApi.vue";
+// import DogApi from "@/components/DogApi.vue";
 </script>
 
 
