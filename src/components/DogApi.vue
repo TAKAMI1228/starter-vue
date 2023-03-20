@@ -1,6 +1,8 @@
 <template>
   <div>
-    <img v-if="data" :src="data"/>
+    <div v-if="anime">Anime Title: {{anime}}</div>
+    <div v-if="character">Character Name: {{character}}</div>
+    <div v-if="quote">Quote: {{quote}}</div>
     <div v-else>Loading...</div>
   </div>
 </template>
@@ -9,12 +11,19 @@
 import { ref, onMounted } from 'vue'
 import axios from 'axios'
 
-const data = ref(null)
+const anime = ref("")
+const character = ref("")
+const quote = ref("")
+
 
 async function fetchData() {
-  const response = await axios.get('https://dog.ceo/api/breeds/image/random')
-  let temp = response.data
-  data.value = temp.message
+  const res = await axios.get('https://animechan.vercel.app/api/random')
+  let animeData = res.data;
+  anime.value = animeData.anime;
+  character.value = animeData.character;
+  quote.value = animeData.quote;
+
+
 }
 
 onMounted(fetchData)
