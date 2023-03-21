@@ -2,7 +2,7 @@
   <div>
     <div v-if="anime">Anime Title: {{anime}}</div>
     <div v-if="name_kanji">Character Name: {{name_kanji}}</div>
-    <img v-if="image_url" :src="image_url" />
+    <img style="width:300px; height:300px;" v-if="image_url" :src="image_url" />
     <div v-if="quote">Quote: {{quote}}</div>
     <div v-else>Loading...</div>
   </div>
