@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HelloWorld from './HelloWorld.vue'
 import HomePage from './HomePage.vue'
 import InputShinchoku from "./InputShinchoku.vue";
+import CreatePage from './CreatePage.vue'
 
 const routes = [
   {
@@ -20,6 +21,12 @@ const routes = [
     path: '/home',
     name: 'home',
     component: HomePage
+  },
+
+  {
+    path: '/create',
+    name: 'create',
+    component: CreatePage
   },
 ]
 
