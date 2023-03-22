@@ -65,6 +65,7 @@ const menuList = ref([
   { title: 'Shinchoku', link: '/shinchoku' },
   { title: 'Home', link: '/home' },
   { title: 'Create', link: '/create' },
+  { title: 'Gallery', link: '/gallery' },
 ])
 
 const changeTheme = () => {

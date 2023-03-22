@@ -3,6 +3,7 @@ import HelloWorld from './HelloWorld.vue'
 import HomePage from './HomePage.vue'
 import InputShinchoku from "./InputShinchoku.vue";
 import CreatePage from './CreatePage.vue'
+import GalleryPage from './GalleryPage.vue'
 
 const routes = [
   {
@@ -27,6 +28,12 @@ const routes = [
     path: '/create',
     name: 'create',
     component: CreatePage
+  },
+
+  {
+    path: '/gallery',
+    name: 'gallery',
+    component: GalleryPage
   },
 ]
 
