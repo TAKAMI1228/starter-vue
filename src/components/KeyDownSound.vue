@@ -6,7 +6,9 @@
 
 <script setup>
 import { onMounted, onUnmounted } from "vue";
-import {Howl} from 'howler';
+import {Howl, Howler} from 'howler';
+Howler.volume(0.2);
+
 const suumo0 = new Howl({
   src: [require('@/assets/audio/suumo/suumo_0.mp3')],
 });
