@@ -96,48 +96,52 @@ const handleKeyDown = (e) => {
 };
 
 const handleKeyUp = (e) => {
-  switch (e.key) {
-    case "j":
-      suumo0.stop();
-      break;
-    case "i":
-      suumo1.stop();
-      break;
-    case "k":
-      suumo2.stop();
-      break;
-    case "o":
-      suumo3.stop();
-      break;
-    case "l":
-      suumo4.stop();
-      break;
-    case "p":
-      suumo18.stop();
-      break;
+  function stop() {
+    switch (e.key) {
+      case "j":
+        suumo0.stop();
+        break;
+      case "i":
+        suumo1.stop();
+        break;
+      case "k":
+        suumo2.stop();
+        break;
+      case "o":
+        suumo3.stop();
+        break;
+      case "l":
+        suumo4.stop();
+        break;
+      case "p":
+        suumo18.stop();
+        break;
 
-    case "a":
-      suumo5.stop();
-      break;
-    case "w":
-      suumo6.stop();
-      break;
-    case "s":
-      suumo7.stop();
-      break;
-    case "e":
-      suumo8.stop();
-      break;
-    case "d":
-      suumo9.stop();
-      break;
-    case "r":
-      suumo10.stop();
-      break;
-    case "f":
-      suumo11.stop();
-      break;
-  }};
+      case "a":
+        suumo5.stop();
+        break;
+      case "w":
+        suumo6.stop();
+        break;
+      case "s":
+        suumo7.stop();
+        break;
+      case "e":
+        suumo8.stop();
+        break;
+      case "d":
+        suumo9.stop();
+        break;
+      case "r":
+        suumo10.stop();
+        break;
+      case "f":
+        suumo11.stop();
+        break;
+    }
+  }
+  setTimeout(stop, 66);
+};
 
 onMounted(() => {
   document.addEventListener('keypress', handleKeyDown);
