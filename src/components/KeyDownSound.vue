@@ -7,7 +7,7 @@
 <script setup>
 import { onMounted, onUnmounted } from "vue";
 import {Howl, Howler} from 'howler';
-Howler.volume(0.2);
+Howler.volume(0.25);
 
 const suumo0 = new Howl({
   src: [require('@/assets/audio/suumo/suumo_0.mp3')],
@@ -57,12 +57,15 @@ const handleKeyDown = (e) => {
       break;
     case "i":
       suumo1.play();
+      suumo1.stereo(-0.9);
       break;
     case "k":
       suumo2.play();
       break;
     case "o":
       suumo3.play();
+      suumo3.stereo(0.9);
+
       break;
     case "l":
       suumo4.play();
